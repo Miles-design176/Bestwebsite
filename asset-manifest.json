@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Bestwebsite.ca/static/css/main.26d15a25.css",
-    "main.js": "/Bestwebsite.ca/static/js/main.bb3be5fd.js",
-    "static/js/453.69f3745b.chunk.js": "/Bestwebsite.ca/static/js/453.69f3745b.chunk.js",
-    "index.html": "/Bestwebsite.ca/index.html",
-    "main.26d15a25.css.map": "/Bestwebsite.ca/static/css/main.26d15a25.css.map",
-    "main.bb3be5fd.js.map": "/Bestwebsite.ca/static/js/main.bb3be5fd.js.map",
-    "453.69f3745b.chunk.js.map": "/Bestwebsite.ca/static/js/453.69f3745b.chunk.js.map"
+    "main.css": "/static/css/main.f0749ea3.css",
+    "main.js": "/static/js/main.4e511b8e.js",
+    "static/js/453.50bbb56d.chunk.js": "/static/js/453.50bbb56d.chunk.js",
+    "index.html": "/index.html",
+    "main.f0749ea3.css.map": "/static/css/main.f0749ea3.css.map",
+    "main.4e511b8e.js.map": "/static/js/main.4e511b8e.js.map",
+    "453.50bbb56d.chunk.js.map": "/static/js/453.50bbb56d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26d15a25.css",
-    "static/js/main.bb3be5fd.js"
+    "static/css/main.f0749ea3.css",
+    "static/js/main.4e511b8e.js"
   ]
 }
