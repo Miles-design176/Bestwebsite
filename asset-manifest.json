@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Bestwebsite.ca/static/css/main.c6045384.css",
+    "main.js": "/Bestwebsite.ca/static/js/main.bb3be5fd.js",
+    "static/js/453.69f3745b.chunk.js": "/Bestwebsite.ca/static/js/453.69f3745b.chunk.js",
+    "index.html": "/Bestwebsite.ca/index.html",
+    "main.c6045384.css.map": "/Bestwebsite.ca/static/css/main.c6045384.css.map",
+    "main.bb3be5fd.js.map": "/Bestwebsite.ca/static/js/main.bb3be5fd.js.map",
+    "453.69f3745b.chunk.js.map": "/Bestwebsite.ca/static/js/453.69f3745b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6045384.css",
+    "static/js/main.bb3be5fd.js"
+  ]
+}
