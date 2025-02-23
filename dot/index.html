@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catch me if you can!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            cursor: none;
+            overflow: hidden;
+        }
+        #cursor {
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            transition: all 0.1s ease;
+        }
+        #text {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            position: fixed;
+            top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">Try to catch the dot!</div>
+    <div id="cursor"></div>
+    <script>
+        const cursor = document.getElementById('cursor');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = window.innerWidth / 2;
+        let cursorY = window.innerHeight / 2;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function moveCursor() {
+            const dx = mouseX - cursorX;
+            const dy = mouseY - cursorY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < 100) {
+                const angle = Math.atan2(dy, dx);
+                cursorX -= Math.cos(angle) * 15;
+                cursorY -= Math.sin(angle) * 15;
+            }
+
+            // Keep cursor within bounds
+            cursorX = Math.max(0, Math.min(window.innerWidth - 20, cursorX));
+            cursorY = Math.max(0, Math.min(window.innerHeight - 20, cursorY));
+
+            cursor.style.left = cursorX + 'px';
+            cursor.style.top = cursorY + 'px';
+            
+            requestAnimationFrame(moveCursor);
+        }
+
+        moveCursor();
+    </script>
+</body>
+</html>
